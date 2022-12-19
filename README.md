@@ -11,6 +11,7 @@ import {now, since} from 'timespan-milliseconds'
 const start = now()
 // do something
 console.log(`took ${since(start)} ms`)
+// 'took 1.23 ms'
 ```
 
 ## Require
@@ -20,4 +21,5 @@ const {now, since} = require('timespan-milliseconds')
 const start = now()
 // do something
 console.log(`took ${since(start)} ms`)
+// 'took 1.23 ms'
 ```
