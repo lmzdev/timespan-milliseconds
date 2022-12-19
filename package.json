@@ -1,0 +1,42 @@
+{
+  "name": "timespan-milliseconds",
+  "version": "1.0.2",
+  "description": "pretty timespan measurement in sub-milliseconds",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/mjs/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "eslint src && tsc -p tsconfig-es.json && tsc -p tsconfig-cjs.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmzdev/timespan-milliseconds.git"
+  },
+  "keywords": [
+    "hrtime",
+    "time",
+    "timespan",
+    "milliseconds",
+    "nanoseconds"
+  ],
+  "author": "lmzdev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lmzdev/timespan-milliseconds/issues"
+  },
+  "homepage": "https://github.com/lmzdev/timespan-milliseconds#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.17",
+    "@typescript-eslint/eslint-plugin": "^5.45.1",
+    "@typescript-eslint/parser": "^5.45.1",
+    "eslint": "^8.30.0",
+    "typescript": "^4.9.4"
+  },
+  "exports": {
+    "." : {
+      "require": "./lib/cjs/index.js",
+      "import": "./lib/mjs/index.js"
+    }
+  }
+}
