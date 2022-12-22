@@ -1,6 +1,6 @@
-import { now, since, span } from '../src'
-import 'mocha'
-import { assert } from 'chai'
+const {now, since, span} = require('timespan-milliseconds')
+require('mocha')
+const { assert } = require('chai')
 
 async function waitFor(waitForMs) {
     return new Promise((arg) => setTimeout(arg, waitForMs));

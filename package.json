@@ -1,11 +1,10 @@
 {
   "name": "timespan-milliseconds",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "pretty timespan measurement in sub-milliseconds",
   "main": "./lib/cjs/index.js",
   "module": "./lib/mjs/index.js",
   "types": "./lib/index.d.ts",
-  "type": "module",
   "scripts": {
     "test": "mocha --loader=ts-node/esm --experimental-specifier-resolution=node test/",
     "build": "eslint src && tsc -p tsconfig-es.json && tsc -p tsconfig-cjs.json"
