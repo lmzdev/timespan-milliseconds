@@ -21,15 +21,14 @@ describe('Test since()', () => {
     })
     it('should return correct milliseconds when waiting', async () => {
         const q = now()
-        const waitForMs = 10
         const p = performance.now()
-        await waitFor(waitForMs)
+        await waitFor(10)
         assert.equal(Math.round(since(q)), Math.round((performance.now() - p)))
     })
 })
 
 describe('Test span()', () => {
-    it('shoud return a value greater zero', async () => {
+    it('should return a value greater zero', async () => {
         const start = now()
         await waitFor(2)
         const until = now()
