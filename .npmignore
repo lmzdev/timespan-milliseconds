@@ -3,3 +3,4 @@ test/
 .eslintrc.json
 tsconfig*
 .nyc_output
+.github
