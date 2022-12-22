@@ -1,4 +1,6 @@
 # timespan-milliseconds
+[![run tests](https://github.com/lmzdev/timespan-milliseconds/actions/workflows/tests.yml/badge.svg)](https://github.com/lmzdev/timespan-milliseconds/actions/workflows/tests.yml)
+
 Pretty timespan-measurement in sub-milliseconds
 
 ## Install 
