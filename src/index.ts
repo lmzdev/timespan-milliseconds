@@ -1,18 +1,18 @@
     /**
      * 
-     * @returns current nanoseconds from hrtime.bigint()
+     * @returns current millis from performance.now() 
      */
-    export function now(): bigint {
-        return process.hrtime.bigint()
+    export function now(): number {
+        return performance.now()
     }
 
     /**
      * 
-     * @param start start of interval in nanoseconds
+     * @param start start of interval
      * @returns time passed since start in milliseconds, truncated to 2 decimals
      */
-    export function since(start: bigint): number {
-        return Number((process.hrtime.bigint() - start) / 10000n) / 100
+    export function since(start: number): number {
+        return Math.floor((performance.now() - start) * 100) / 100
     }
 
     /**
@@ -21,6 +21,6 @@
      * @param end 
      * @returns time passed between start and end in milliseconds, truncated to 2 decimals
      */
-    export function span(start: bigint, end: bigint): number {
-        return Number((end - start) / 10000n) / 100
+    export function span(start: number, end: number): number {
+        return Math.floor((end - start) * 100) / 100
     }

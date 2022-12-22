@@ -1,6 +1,6 @@
 {
   "name": "timespan-milliseconds",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "pretty timespan measurement in sub-milliseconds",
   "main": "./lib/cjs/index.js",
   "module": "./lib/mjs/index.js",
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/lmzdev/timespan-milliseconds.git"
   },
   "keywords": [
-    "hrtime",
+    "performance",
     "time",
     "timespan",
     "milliseconds",
