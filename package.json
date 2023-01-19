@@ -1,13 +1,14 @@
 {
   "name": "timespan-milliseconds",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "pretty timespan measurement in sub-milliseconds",
   "main": "./lib/cjs/index.js",
-  "module": "./lib/mjs/index.js",
+  "module": "./lib/mjs/index.mjs",
   "types": "./lib/index.d.ts",
   "scripts": {
     "test": "mocha --loader=ts-node/esm --experimental-specifier-resolution=node test/",
-    "build": "eslint src && tsc -p tsconfig-es.json && tsc -p tsconfig-cjs.json"
+    "build": "eslint src && tsc -p tsconfig-es.json && tsc -p tsconfig-cjs.json && npm run esm ",
+    "esm" : "cd ./lib/mjs/ && mv index.js index.mjs"
   },
   "repository": {
     "type": "git",
@@ -41,7 +42,7 @@
   "exports": {
     ".": {
       "require": "./lib/cjs/index.js",
-      "import": "./lib/mjs/index.js"
+      "import": "./lib/mjs/index.mjs"
     }
   }
 }

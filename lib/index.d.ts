@@ -1,18 +1,18 @@
 /**
  *
- * @returns current nanoseconds from hrtime.bigint()
+ * @returns current millis from performance.now()
  */
-export declare function now(): bigint;
+export declare function now(): number;
 /**
  *
- * @param start start of interval in nanoseconds
+ * @param start start of interval
  * @returns time passed since start in milliseconds, truncated to 2 decimals
  */
-export declare function since(start: bigint): number;
+export declare function since(start: number): number;
 /**
  *
  * @param start
  * @param end
  * @returns time passed between start and end in milliseconds, truncated to 2 decimals
  */
-export declare function span(start: bigint, end: bigint): number;
+export declare function span(start: number, end: number): number;
